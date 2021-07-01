@@ -1,0 +1,105 @@
+{% extends "base.html" %}
+{% block tabs %}
+  {{ super() }}
+  <style>
+    .md-header {
+      position: initial;
+    }
+    .md-footer__inner {
+      display: none;
+    }
+    .md-main {
+      flex-grow: unset;
+    }
+    .md-main__inner {
+      margin: 0;
+    }
+    .md-content {
+      display: none;
+    }
+    .md-container {
+      background-image: url("assets/images/background-medium.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-color: black;
+    }
+    .tx-container {
+      padding-top: 20px;
+      flex-grow: 1;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .tx-hero {
+      margin: 0 16px;
+      color: var(--md-primary-bg-color);
+    }
+    .tx-hero h1 {
+      margin-bottom: 20px;
+      color: currentColor;
+      font-weight: 700;
+    }
+    .tx-hero__content {
+      padding-bottom: 120px;
+    }
+    @media screen and (max-width: 30em) {
+      .md-container {
+        background-image: url("assets/images/background-small.jpg");
+      }
+      .tx-hero h1 {
+        font-size: 28px;
+      }
+    }
+    @media screen and (min-width:60em) {
+      .md-container {
+        background-image: url("assets/images/background-large.jpg");
+      }
+      .tx-hero {
+        display: flex;
+        align-items: stretch;
+      }
+      .tx-hero__content {
+        max-width: 380px;
+        margin-top: 70px;
+        padding-bottom: 14vw;
+      }
+      .tx-hero__image {
+        order: 1;
+        width: 760px;
+        transform: translateX(80px);
+      }
+      .md-sidebar--secondary {
+        display:none
+      }
+    }
+    @media screen and (min-width:76.25em) {
+      .tx-hero__image {
+        transform: translateX(160px);
+      }
+      .md-sidebar--primary {
+        display:none
+      }
+    }
+    @media screen and (min-width:1920px) {
+      .md-container {
+        background-image: url("assets/images/background-large.jpg");
+      }
+    }
+  </style>
+  <section class="tx-container">
+    <div class="md-grid md-typeset">
+      <div class="tx-hero">
+        <div class="tx-hero__content">
+          <h1>Join the Quantum Revolution</h1>
+          <p>{{ config.site_description }}</p>
+          <a href="getting-started.html" title="Getting Started" class="md-button md-button--primary">
+            Get Started →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}
+{% block content %}{% endblock %}
+{% block footer %}
+  {{ super() }}
+{% endblock %}

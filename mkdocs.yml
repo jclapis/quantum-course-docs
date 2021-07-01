@@ -1,0 +1,137 @@
+site_name: Intro to Quantum Software Development
+site_url: https://quantum-software.pages.mitre.org/course
+site_description: >
+  This course will help you develop practicable quantum software engineering
+  skills and enable you to implement and analyze quantum algorithms
+site_author: Joe Clapis & Richard Preston
+copyright: >
+  © 2021 The MITRE Corporation. All rights reserved. For internal use only.
+repo_url: https://gitlab.mitre.org/quantum-software/course
+repo_name: GitLab
+edit_uri: edit/master/docs
+use_directory_urls: false
+theme:
+  name: material
+  custom_dir: docs/assets/overrides
+  favicon: assets/images/favicon.svg
+  logo: assets/images/logo.svg
+  icon:
+    repo: fontawesome/brands/gitlab
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+  palette:
+    # light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    # dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  font:
+    # text: Roboto
+    code: Ubuntu Mono
+markdown_extensions:
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - attr_list
+  - admonition
+  - meta
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.smartsymbols
+plugins:
+  - search
+  - git-revision-date-localized:
+      fallback_to_build_date: true
+extra:
+  social:
+    - icon: mitre
+      link: https://www.mitre.org
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/mitre
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/MITREcorp
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/user/mitrecorp
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/MITREcorp
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/mitre.corp/?hl=en
+extra_css:
+  - assets/css/custom-styles.css
+extra_javascript:
+  - assets/js/mathjax-config.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js
+nav:
+  - Home: 'index.md'
+  - Course Info:
+    - 'introduction.md'
+    - 'about.md'
+    - 'background.md'
+    - 'getting-started.md'
+  - Prerequisites:
+    - Background Math:
+      - 'background-math/complex-numbers.md'
+      - 'background-math/vectors.md'
+      - 'background-math/matrices.md'
+      - 'background-math/braket-tensor-notation.md'
+    - Classical Computing:
+      - 'classical-computing/digital-information.md'
+      - 'classical-computing/endianness.md'
+      - 'classical-computing/digital-logic.md'
+    - Software Development:
+      - 'software-development/low-level-programming.md'
+      - 'software-development/high-level-programming.md'
+      - 'software-development/visual-studio.md'
+  - Fundamentals:
+    - Qubits and Quantum Gates:
+      - 'quantum-concepts/qubits.md'
+      - 'quantum-concepts/bloch-sphere.md'
+      - 'quantum-concepts/single-qubit-gates.md'
+      - 'software-tools/intro-qsharp.md'
+      - 'labs/lab1.md'
+    - Multi-Qubit Systems:
+      - 'quantum-concepts/qubit-registers.md'
+      - 'quantum-concepts/multi-qubit-gates.md'
+    - Quantum Circuits:
+      - 'quantum-concepts/complex-superpositions.md'
+      - 'quantum-concepts/quantum-circuit-diagrams.md'
+      - 'software-tools/quirk-tool.md'
+  - Applications:
+    - Quantum Protocols:
+      - 'quantum-concepts/quantum-interference.md'
+      - 'quantum-algorithms/superdense-coding.md'
+    - Quantum Algorithms:
+      - 'quantum-algorithms/deutsch-jozsa-algorithm.md'
+      - 'quantum-algorithms/simons-algorithm.md'
+      - 'quantum-algorithms/grovers-algorithm.md'
+      - 'quantum-algorithms/qft.md'
+      - 'quantum-algorithms/shors-algorithm.md'
+    - Quantum Error Correction:
+      - 'error-correction-codes/bit-flip-error-correction.md'
+      - 'error-correction-codes/steane-ecc.md'
+    - Execution on Quantum Computers:
+      - 'software-tools/intro-qiskit.md'
+      - 'real-execution/cloud-based-machines.md'
+      - 'real-execution/resource-estimation.md'
+      - 'real-execution/whats-next.md'
