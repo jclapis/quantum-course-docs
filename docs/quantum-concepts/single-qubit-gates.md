@@ -204,7 +204,7 @@ Here's what these qubits look like when we graph them on the Bloch Sphere:
 
 ![](images/single-qubit-gates-1.png){: .center loading=lazy }
 
-Note that this isn’t the entire 3D sphere - I've removed the Y axis since we aren't going to deal with imaginary phases in this class.
+Note that this isn’t the entire 3D sphere - we've removed the Y axis since we aren't going to deal with imaginary phases in this class.
 
 Anyway, applying the X gate to these qubits is easy, since the X gate just flips the top and bottom elements of the state vector.
 This is what each qubit becomes after the X gate runs on it:

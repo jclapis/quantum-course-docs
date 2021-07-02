@@ -173,5 +173,5 @@ Here $b_1$ refers to the second bit you want to send, and $b_0$ refers to the fi
 ## Lab 4
 
 Alright, time to start coding!
-In Lab 6 you're going to implement the whole superdense coding protocol from start to finish.
+In Lab 4 you're going to implement the whole superdense coding protocol from start to finish.
 Have fun!

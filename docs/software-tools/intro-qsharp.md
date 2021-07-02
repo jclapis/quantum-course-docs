@@ -3,7 +3,7 @@
 ## The Quantum Development Kit
 
 There are a lot of software frameworks designed to help us write quantum code out there.
-I've experimented with many of them, including [Qiskit](https://qiskit.org/), [Cirq](https://github.com/quantumlib/Cirq/), [Forest](https://www.rigetti.com/forest), [ProjectQ](https://github.com/ProjectQ-Framework/ProjectQ), and [XACC](https://github.com/eclipse/xacc).
+We've experimented with many of them, including [Qiskit](https://qiskit.org/), [Cirq](https://github.com/quantumlib/Cirq/), [Forest](https://www.rigetti.com/forest), [ProjectQ](https://github.com/ProjectQ-Framework/ProjectQ), and [XACC](https://github.com/eclipse/xacc).
 All of them are frameworks built for classical languages, like Python or C++.
 In our opinion, the easiest framework to use (both for learning quantum computing and for actual day-to-day development work) is Microsoft's [Quantum Development Kit](https://docs.microsoft.com/en-us/azure/quantum/install-overview-qdk).
 That's what we're going to use in this class.
@@ -142,7 +142,7 @@ Running this function will simply print "Hello World!" to the program's output, 
 
 ### Basic Types
 
-[The Q# documentation](https://docs.microsoft.com/en-us/azure/quantum/user-guide/language/typesystem/) covers the included types, but I've summarized the important ones here:
+[The Q# documentation](https://docs.microsoft.com/en-us/azure/quantum/user-guide/language/typesystem/) covers the included types, but we've summarized the important ones here:
 
 - **Unit** is essentially void, or None. It represents an empty value / lack of a value.
 - **Int** is a 64-bit signed integer. Note that this is 64-bit instead of 32-bit; most classical languages would call this a "long".

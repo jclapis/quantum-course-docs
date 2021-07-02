@@ -59,7 +59,7 @@ $$
 
 So for the left-shift-by-1 operation on 3 qubits, the secret string is $s=100$. 
 
-Here’s another example problem (figuring out how this works is actually a challenge problem in Challenge Lab 2):
+Here’s another example problem (figuring out how this works is actually a challenge problem in this lab):
 
 | Input | Output |
 | - | - |
@@ -158,7 +158,7 @@ In slightly more detail, Simon's algorithm works like this:
     If they're the same, you found the secret string!
     If they're different, the secret string is actually $s = \ket{0..0}$, so the oracle doesn't follow the rules of the problem and it might not have a secret string after all.
 
-In Challenge Lab 2, I've already implemented all of the classical stuff for you (because this is a class on quantum software development, not C# development, so it's not fair if you don't know C# already).
+In this lab, we've already implemented all of the classical stuff for you (because this is a class on quantum software development, not C# development, so it's not fair if you don't know C# already).
 You just have to worry about the quantum step.
 
 
@@ -284,9 +284,9 @@ We don't know which state we're going to get when we measure the input, but one 
 Because of this guarantee, we can use the quantum step to quickly build up a set of linear equations and find the secret string in the classical postprocessing step.
 
 
-## Lab 6
+## Lab 7
 
-With that explanation, you're ready to tackle Simon's algorithm in Lab 6.
+With that explanation, you're ready to tackle Simon's algorithm in Lab 7.
 As we mentioned before, the classical part has already been implemented for you.
 You can take a look at the code for it if you're curious, it's pretty thoroughly documented, but this isn't a class about learning C# or classical techniques like Gaussian elimination, so we did it all for you.
 All you need to do is the quantum step, and if you're feeling particularly adventurous, there are a few extra oracle functions you can implement and run Simon's algorithm on at the end of the lab.

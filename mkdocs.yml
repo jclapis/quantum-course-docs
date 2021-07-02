@@ -123,8 +123,8 @@ nav:
       - 'quantum-algorithms/superdense-coding.md'
     - Quantum Algorithms:
       - 'quantum-algorithms/deutsch-jozsa-algorithm.md'
-      - 'quantum-algorithms/simons-algorithm.md'
       - 'quantum-algorithms/grovers-algorithm.md'
+      - 'quantum-algorithms/simons-algorithm.md'
       - 'quantum-algorithms/qft.md'
       - 'quantum-algorithms/shors-algorithm.md'
     - Quantum Error Correction:

@@ -5,5 +5,8 @@ The guide is a standalone site built using [mkdocs](https://www.mkdocs.org/).
 
 See the [contributing guide](CONTRIBUTING.md) for information on how to build, serve, and distribute the files.
 
+For the labs, please see [the lab repository](https://github.com/jclapis/quantum-course-labs).
+
 Copyright © 2021 The MITRE Corporation. ALL RIGHTS RESERVED.
+
 Approved for Public Release; Distribution Unlimited. Public Release Case Number 21-1765.

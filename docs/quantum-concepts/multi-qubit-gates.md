@@ -178,7 +178,7 @@ We can do that with a double-controlled X gate, which is similar to CNOT but tak
 This is also called the **CCNOT**, **CCX**, or the **Toffoli** gate.
 
 Here's the truth table for CCNOT.
-I've added a comma to separate the control qubits from the target qubit for clarity (remember, in ket notation, you're allowed to put commas wherever you want because they don't actually mean anything):
+We've added a comma to separate the control qubits from the target qubit for clarity (remember, in ket notation, you're allowed to put commas wherever you want because they don't actually mean anything):
 
 | Input | Output |
 | - | - |

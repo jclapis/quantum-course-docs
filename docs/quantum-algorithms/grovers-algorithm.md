@@ -225,6 +225,6 @@ Here are the steps to implement Grover's algorithm in code:
 1. Run the result on the classical implementation of the function, and check if it's the correct answer.
    If it is, you're done. If not, start over and run the whole algorithm again.
 
-## Lab 7
+## Lab 6
 
-Alright, you're ready to put your Q# skills to the test and build Grover's algorithm in Lab 7!
+Alright, you're ready to put your Q# skills to the test and build Grover's algorithm in Lab 6!

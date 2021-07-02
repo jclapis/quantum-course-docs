@@ -2,7 +2,7 @@
 
 ## Superpositions with More than 2 Terms
 
-We've covered a lot so far - we've gone through qubits, superpositions, the Bloch Sphere, single-qubit gates, registers, multi-qubit gates, entanglement… but I've purposefully kept things (relatively) simple until now.
+We've covered a lot so far - we've gone through qubits, superpositions, the Bloch Sphere, single-qubit gates, registers, multi-qubit gates, entanglement… but we've purposefully kept things (relatively) simple until now.
 All of the superpositions we've looked at only have two states in them.
 For example, in Exercise 3 you saw the four Bell States, which only have two terms in their superpositions:
 
