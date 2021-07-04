@@ -165,7 +165,7 @@ You just have to worry about the quantum step.
 ### The Quantum Step, Part 1: The Oracle
 
 As we discussed in the Quantum Interference page, the $H_{ALL}$ operation is deeply connected to the mod-2 dot product function.
-Simon's quantup step leverages this fact to produce a bit string that has a value of 0 when the mod-2 dot product is applied to it and the secret string.
+Simon's quantum step leverages this fact to produce a bit string that has a value of 0 when the mod-2 dot product is applied to it and the secret string.
 The fact that it's guaranteed to be 0 is what makes the algorithm actually work.
 So how does the quantum step do this?
 

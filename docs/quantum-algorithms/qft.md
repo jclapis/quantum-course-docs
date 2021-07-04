@@ -59,7 +59,7 @@ y = a \cdot \sin(f \cdot x + p)
 $$
 
 The coefficient $a$ controls the amplitude, $f$ controls the frequency, and $p$ controls the phase.
-If you have the equation, determining thsoe three components is trivial.
+If you have the equation, determining those three components is trivial.
 For simple waves like this, it's also easy by just looking at the graph.
 But our solar panel output graph doesn't look nearly this smooth and uniform.
 It's got lots of ups and downs and fluctuations.
@@ -127,7 +127,7 @@ In other words: the more samples you give it, the smaller the bin size, and thus
 
 !!! note
     The exact description of why this works, and what this math is actually doing, is far beyond the scope of this class.
-    We encourage you to read up on the theory behind the Fourier transform if you're interested in the underlying mechanics.*
+    We encourage you to read up on the theory behind the Fourier transform if you're interested in the underlying mechanics.
 
 
 ## Approximating a Function with the Fourier Transform
@@ -340,7 +340,7 @@ $$
 The second way only uses one register, which stores $a$, and then $x_a$ is stored in the **amplitude** of each term in that register:
 
 $$
-\ket{x} = x_0 \ket{0} + x_1 \ket{1} + ... + x_{N-1} \ket{N-1} = \sum_{a=0}^{N-1} x_a \ket{a}
+\ket{a} = x_0 \ket{0} + x_1 \ket{1} + ... + x_{N-1} \ket{N-1} = \sum_{a=0}^{N-1} x_a \ket{a}
 $$
 
 Though, of course, the values will have to be **normalized** so that the sum of their squares equals one.
@@ -377,16 +377,16 @@ First, for the sake of convenience, let's assume that the size of the original a
 Using the above amplitude-based technique, the original values of $x$ are represented like this:
 
 $$
-\ket{x} = \sum_{a=0}^{2^n-1} x_a \ket{a}
+\ket{\psi} = \sum_{a=0}^{2^n-1} x_a \ket{a}
 $$
 
 After the Inverse Quantum Fourier Transform, the register will be in this superposition:
 
 $$
-\ket{x^\prime} = \sum_{k=0}^{2^n-1} \sum_{a=0}^{2^n-1} x_a \cdot e^{-2\pi kai / 2^n} \ket{a}
+\ket{\psi^\prime} = \sum_{k=0}^{2^n-1} \sum_{a=0}^{2^n-1} x_a \cdot e^{-2\pi kai / 2^n} \ket{a}
 $$
 
-Thus, as expected, the Fourier Transformed values of $x$ will be stored in the amplitudes of $x^\prime$ after the IQFT.
+Thus, as expected, the Fourier Transformed values of $x$ will be stored in the amplitudes of $\psi^\prime$ after the IQFT.
 You might recall from the Fundamentals sections earlier that if you multiply an amplitude by $e^{i\phi}$, you're just modifying its phase (the amount of imaginary-ness in the amplitude) without changing the actual magnitude of the $\ket{0}$ or $\ket{1}$ terms.
 Indeed, the IQFT is implemented by using some very carefully-crafted applications of the $R_\phi$ gate to accomplish exactly this.
 
