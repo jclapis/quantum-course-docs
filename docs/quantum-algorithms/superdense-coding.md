@@ -104,12 +104,12 @@ And there it is.
 It turns out that if we're given one of the four Bell States, but we don't know which one it is, we can figure it out with 100% certainty by applying the CNOT / H combination to the qubits and measuring them.
 Let's create a table that shows what operations we performed on a Bell State to produce it, and what the resulting measurement will be after running the CNOT / H operations on it:
 
-| **State** | **Operations** | **Measurement** |
-| - | - | - |
-| $\ket{\Phi^{+}}$ | --- | $\ket{00}$ |
-| $\ket{\Phi^{-}}$ | X | $\ket{01}$ |
-| $\ket{\Psi^{+}}$ | Z | $\ket{10}$ |
-| $\ket{\Psi^{-}}$ | XZ | $\ket{11}$ |
+| **Starting State** | **Prep Operations** | **Resulting State** | **Measurement Outcome** |
+| - | - | - | - |
+| $\ket{\Phi^{+}}$ | --- | $\ket{\Phi^{+}}$ | $\ket{00}$ |
+| $\ket{\Phi^{+}}$ | X | $\ket{\Psi^{+}}$ | $\ket{01}$ |
+| $\ket{\Phi^{+}}$ | Z | $\ket{\Phi^{-}}$ | $\ket{10}$ |
+| $\ket{\Phi^{+}}$ | XZ | $\ket{\Psi^{-}}$ | $\ket{11}$ |
 
 As you might have noticed, there is a very convenient correlation between the operations and the measurements.
 Every time we use the X gate, the second qubit is a 1.
