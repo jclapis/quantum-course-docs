@@ -239,7 +239,7 @@ Here's the table of modular exponentiation values as we go through values of $x$
 For $a=11$ and $b=21$, the pattern (1, 11, 16, 8, 4, 2) repeats forever.
 This pattern contains 6 entries, so we say that the function **$11^x \mod 21$ has period 6** (also called **order 6**).
 
-More generally, the period of the modular exponentation function is the smallest value of $p$ that satisfies this equation:
+More generally, the period of the modular exponentiation function is the smallest value of $p$ that satisfies this equation:
 
 $$
 a^p \mod b = 1, \qquad p > 0
@@ -267,7 +267,7 @@ As another example, if we leave $b=21$ but vary the value of $a$, here is a tabl
 
 The rows with `---` in the period are places where $a$ is not co-prime with 21.
 
-Now, normally, finding the period of the modular exponentation function is an **exponentially difficult** problem.
+Now, normally, finding the period of the modular exponentiation function is an **exponentially difficult** problem.
 There's no easy way to do it; barring some optimizations, you simply have to go through each value of $x$ and check to see if the modular exponent is 1.
 For very large values of $a$ and $b$, this can take a very, *very* long time.
 So long, in fact, that it's impractical to solve on a classical computer - finding the period of this function is an NP-hard problem.
@@ -292,7 +292,7 @@ H_{ALL}(\ket{x}), \qquad \ket{x} &= \frac{1}{\sqrt{2^n}} \sum_{i=0}^{2^n-1} \ket
 \end{aligned}}
 $$
 
-Now let's run the modular exponentation:
+Now let's run the modular exponentiation:
 
 $$
 \displaylines{
@@ -313,7 +313,7 @@ The input register itself doesn't contain any information about the period; it's
 Indeed, the period information is captured in the relationship between the input and output once they're entangled together.
 
 In the [QFT](./qft.md) section, we demonstrated how the inverse QFT could be used to recover the frequency of a wave if the that wave was encoded into the amplitudes of a register in superposition.
-Here, we're going to do something similiar.
+Here, we're going to do something similar.
 It's a little different because the amplitudes don't contain a wave in the same way; they all have the same value in some states, and 0 value in others (for example, $\ket{0,14}$ is not part of the superposition).
 
 We're going to do this:
@@ -443,7 +443,7 @@ $$
 Great!
 This is helpful if we already know what $P$ and $Q$ are, but back to our original problem - we don't.
 We have an approximation of them, but not the real values.
-To find the period of modular exponentations, we need those real values.
+To find the period of modular exponentiations, we need those real values.
 We can do that using a similar technique to the above, known as finding the **convergents of a continued fraction**.
 
 
