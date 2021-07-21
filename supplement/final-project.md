@@ -45,6 +45,10 @@
 
 - **All group members must be featured in the video.**
 
+- Write a script and practice what you are going to say before recording. Plan out which parts of the video will be talking heads and which parts will be narrated visuals.
+
+- Pick a "lead editor" who will be responsible for the final product. This helps to have a consistent voice and quality to the video.
+
 ---
 
 ## Building Block Algorithms
