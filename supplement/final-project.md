@@ -28,7 +28,22 @@
 
 6. Create a ~5-minute video with your team to present on the last day of the program.
 
-    - We will discuss the details of this in class.
+    - See below.
+
+### Video Pointers/Requirements
+
+- First and foremost, consider your audience. The purpose of creating the video is to get the viewer to understand what you did and why they should care. So you should tailor the presentation style and content to be appealing and accessible to your parents, siblings, and peers.
+
+- When considering what to cover in the video, think about what questions an audience member is likely to ask themselves. For example:
+
+    - Who are you?
+    - What is the background and context to what you're talking about? (Am I going to be able to understand this?)
+    - What were you setting out to do? What challenge were you trying to overcome?
+    - How did you approach it? What did you accomplish?
+    - So what/who cares? What is the significance of what you did?
+    - What is the main takeaway? What did you learn?
+
+- **All group members must be featured in the video.**
 
 ---
 
